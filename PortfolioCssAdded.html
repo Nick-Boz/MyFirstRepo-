@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Portfolio.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.container {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Nicholas Bozzo</h2>
+  <h3>A Showcase of School and Work Projects:</h3>
+  <p>Expand the Projects to get a better look :)</p>
+</div>
+
+<!-- The four columns -->
+<div style="text-align:center">
+<div class="row">
+  <div class="column">
+    <img src="CokeProject.png" alt="Animation" style="width:100%" onclick="myFunction(this);">
+    <h4>Animation</h4>
+    <p> This animation project was done in my Intro to Programming class. I created a replication of a pop bottle that shoots upwards, leaving a trail of fizz.</p>
+  </div>
+  <div class="column">
+    <img src="WorkProject.png" alt="JavaScript Assignment" style="width:100%" onclick="myFunction(this);">
+    <h4>JavaScript Assignment @ Plus Consulting</h4>
+    <p>I worked with the InforCRM mobile application to edit and design fields and picklists, create rows and columns, and design the layout that is pictured on the right, given the starting point of the left image. This was done during a mobile application upgrade.
+  </div>
+  <div class="column">
+    <img src="DataJamProject.png" alt="DataJam" style="width:100%" onclick="myFunction(this);">
+    <h4>Data Anayltics Competition</h4>
+    <p>My team and I came to a conculusion using business analytics software. We were given data based on attrition, and our results are summarized in the expanded image.</p>
+  </div>
+  <div class="column">
+    <img src="DataStructures.png" alt="DataStructures" style="width:100%" onclick="myFunction(this);">
+    <h4>Data Structure</h4>
+    <p>This is a snippet of code with the corresponding result using jQuery with dynamic and functional programming, and greedy algorithims.</p>
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
