@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="UTF-8">
+	<title>New York Times Article Search</title>
+
+<body>
+
+<div class="container">
+
+	<h1 class="text-center">New York Times Article Search</h1>
+	</div>
+
+	<div class="row">
+	<div class="col-sm-12">
+
+	<form role="form">
+
+	<div class="form-group">
+	<label for="search">Search Term:</label>
+	<input type="text" class="form-control" id="searchTerm">
+	</div>
+
+	<div class="form-group">
+	<label for="pwd">Number of Search Results:</label>
+	<select class="form-control" id="numSearchResults">
+	<option value=1>1</option>
+	<option value=5 selected>5</option>
+	<option value=10>10</option>
+	</select>
+	</div>
+
+	<div class="form-group">
+	<label for="startYear">Start Year (Optional):</label>
+	<input type="text" class="form-control" id="startYear">
+	</div>
+
+	<div class="form-group">
+	<label for="endYear">End Year (Optional):</label>
+	<input type="text" class="form-control" id="endYear">
+	</div>
+
+	<button type="submit" class="btn btn-default" id="runSearch"><i class="fa fa-search"></i> Search</button>
+ <button type="button" class="btn btn-default" id="clearAll"><i class="fa fa-trash"></i> Clear Results</button>
+
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-sm-12">
+	<br>
+
+	<div class="panel-body" id="wellSection">
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-sm-12">
+
+	</div>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="NYTArticleSearch.js"></script>
+
+</body>
+</html>
