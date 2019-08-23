@@ -1,3 +1,7 @@
 # My website for Advanced Programming
 
-## Information about myself 
+## Information and Projects
+This website contains information about myself as well as projects that are implimented into the site. 
+
+## What programming languages were utilized?
+- HTML, CSS, JQuery
