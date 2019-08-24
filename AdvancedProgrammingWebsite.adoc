@@ -1,6 +1,6 @@
 # My website for Advanced Programming
 
-:AdvancedProgramming_Website: Food Pantry
+:AdvancedProgramming_Website: 
 :AdvancedProgramming_LOC: Wood St.
 :AdvancedProgramming_ENV: Staging
 :AdvancedProgramming_URL:
