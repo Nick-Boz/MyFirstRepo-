@@ -1,9 +1,9 @@
 # My website for Advanced Programming
 
-:AdvancedProgramming_Website: 
+:AdvancedProgramming_Website: Advanced Programming
 :AdvancedProgramming_LOC: Wood St.
 :AdvancedProgramming_ENV: Staging
-:AdvancedProgramming_URL:
+:AdvancedProgramming_URL: nmbozzo.it.pointpark.edu
 :AdvancedProgramming_Status: Available
 :imagesdir: images
 
@@ -13,8 +13,8 @@ This website contains information about myself as well as projects that are impl
 ## What programming languages were utilized?
 - HTML, CSS, JQuery
 
-[grid="rows", format="csv"]
-[options="header", cols=^,<,<s,<,>m"]
+[grid="rows",format="csv"]
+[options="header",cols="^,<,<s,<,>m"]
 |=========================
 Website,Location,Environment,URL,Status
 '{AdvancedProgramming_Website}','{AdvancedProgramming_LOC}','{AdvancedProgramming_ENV}','{AdvancedProgramming_URL}','{AdvancedProgramming_Status}'
