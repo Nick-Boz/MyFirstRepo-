@@ -7,6 +7,9 @@
 :AdvancedProgramming_Status: Available
 :imagesdir: images
 
++
+image::Highrock.png[alt=logo,width=250px][orientation=landscape]
+
 ## Information and Projects
 This website contains information about myself as well as projects that are implimented into the site. 
 
