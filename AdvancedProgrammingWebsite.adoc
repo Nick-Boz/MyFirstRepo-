@@ -23,6 +23,5 @@ Website,Location,Environment,URL,Status
 '{AdvancedProgramming_Website}','{AdvancedProgramming_LOC}','{AdvancedProgramming_ENV}','{AdvancedProgramming_URL}','{AdvancedProgramming_Status}'
 |========================
 
-
-image::https://github.com/Nick-Boz/MyFirstRepo-/blob/master/highrock.jpg[alt=logo,width=250px][orientation=portrait]
+image::highrock.jpg[alt=logo,width=250px][orientation=portrait]
 
