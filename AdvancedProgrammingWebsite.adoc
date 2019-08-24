@@ -13,6 +13,9 @@ This website contains information about myself as well as projects that are impl
 ## What programming languages were utilized?
 - HTML, CSS, JQuery
 
+
+## Website Environment Details
+
 [grid="rows",format="csv"]
 [options="header",cols="^,<,<s,<,>m"]
 |=========================
