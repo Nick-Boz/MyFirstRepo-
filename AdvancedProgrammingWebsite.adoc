@@ -1,7 +1,21 @@
 # My website for Advanced Programming
 
+:AdvancedProgramming_Website: Food Pantry
+:AdvancedProgramming_LOC: Wood St.
+:AdvancedProgramming_ENV: Staging
+:AdvancedProgramming_URL:
+:AdvancedProgramming_Status: Available
+:imagesdir: images
+
 ## Information and Projects
 This website contains information about myself as well as projects that are implimented into the site. 
 
 ## What programming languages were utilized?
 - HTML, CSS, JQuery
+
+[grid="rows", format="csv"]
+[options="header", cols=^,<,<s,<,>m"]
+|=========================
+Website,Location,Environment,URL,Status
+'{AdvancedProgramming_Website}','{AdvancedProgramming_LOC}','{AdvancedProgramming_ENV}','{AdvancedProgramming_URL}','{AdvancedProgramming_Status}'
+|========================
