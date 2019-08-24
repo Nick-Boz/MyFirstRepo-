@@ -7,9 +7,6 @@
 :AdvancedProgramming_Status: Available
 :imagesdir: images
 
-+
-image::highrock.jpg[alt=logo,width=250px][orientation=landscape]
-
 ## Information and Projects
 This website contains information about myself as well as projects that are implimented into the site. 
 
@@ -25,3 +22,7 @@ This website contains information about myself as well as projects that are impl
 Website,Location,Environment,URL,Status
 '{AdvancedProgramming_Website}','{AdvancedProgramming_LOC}','{AdvancedProgramming_ENV}','{AdvancedProgramming_URL}','{AdvancedProgramming_Status}'
 |========================
+
+
+image::highrock.jpg[alt=logo,width=250px][orientation=portrait]
+-test
