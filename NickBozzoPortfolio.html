@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Portfolio.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+}
+
+.column img {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.container {
+  position: relative;
+  display: none;
+}
+
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+.closebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+</style>
+</head>
+<body>
+
+<div style="text-align:center">
+  <h2>Nicholas Bozzo</h2>
+  <h3>A Showcase of School and Work Projects:</h3>
+  <p>Expand the Projects to get a better look :)</p>
+</div>
+
+<div style="text-align:center">
+<div class="row">
+  <div class="column">
+    <img src="CokeProject.png" alt="Animation" style="width:100%" onclick="myFunction(this);">
+    <h4>Animation</h4>
+    <p> This animation project was done in my Intro to Programming class. I created a replication of a pop bottle that shoots upwards, leaving a trail of fizz.</p>
+  </div>
+  <div class="column">
+    <img src="WorkProject.png" alt="JavaScript Assignment" style="width:100%" onclick="myFunction(this);">
+    <h4>JavaScript Assignment @ Plus Consulting</h4>
+    <p>I worked with the InforCRM mobile application to edit and design fields and picklists, create rows and columns, and design the layout that is pictured on the right, given the starting point of the left image. This was done during a mobile application upgrade.
+  </div>
+  <div class="column">
+    <img src="DataJamProject.png" alt="DataJam" style="width:100%" onclick="myFunction(this);">
+    <h4>Data Anayltics Competition</h4>
+    <p>My team and I came to a conculusion using business analytics software. We were given data based on attrition, and our results are summarized in the expanded image.</p>
+  </div>
+  <div class="column">
+    <img src="DataStructures.png" alt="DataStructures" style="width:100%" onclick="myFunction(this);">
+    <h4>Data Structure</h4>
+    <p>This is a snippet of code with the corresponding result using jQuery with dynamic and functional programming, and greedy algorithims.</p>
+  </div>
+</div>
+
+<div class="container">
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+  <img id="expandedImg" style="width:100%">
+  <div id="imgtext"></div>
+</div>
+
+<h4> New York Times Article Search</h4>
+<p>I created an API through the New York Times website.</p>
+	<div class="row">
+	<div class="col-sm-12">
+
+	<form role="form">
+
+	<div class="form-group">
+	<label for="search">Search Term:</label>
+	<input type="text" class="form-control" id="searchTerm">
+	</div>
+
+	<div class="form-group">
+	<label for="pwd">Number of Search Results:</label>
+	<select class="form-control" id="numSearchResults">
+	<option value=1>1</option>
+	<option value=5 selected>5</option>
+	<option value=10>10</option>
+	</select>
+	</div>
+
+	<div class="form-group">
+	<label for="startYear">Start Year (Optional):</label>
+	<input type="text" class="form-control" id="startYear">
+	</div>
+
+	<div class="form-group">
+	<label for="endYear">End Year (Optional):</label>
+	<input type="text" class="form-control" id="endYear">
+	</div>
+
+	<button type="submit" class="btn btn-default" id="runSearch"><i class="fa fa-search"></i> Search</button>
+ <button type="button" class="btn btn-default" id="clearAll"><i class="fa fa-trash"></i> Clear Results</button>
+
+	</form>
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-sm-12">
+	<br>
+
+	<div class="panel-body" id="wellSection">
+	</div>
+	</div>
+	</div>
+	</div>
+
+	<div class="row">
+	<div class="col-sm-12">
+
+	</div>
+	</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery.js"></script>
+
+<script src="NYTArticleSearch.js"></script>
+
+</body>
+
+<script>
+function myFunction(imgs) {
+  var expandImg = document.getElementById("expandedImg");
+  var imgText = document.getElementById("imgtext");
+  expandImg.src = imgs.src;
+  imgText.innerHTML = imgs.alt;
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</body>
+</html>
